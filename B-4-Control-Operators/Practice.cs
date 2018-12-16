@@ -12,8 +12,18 @@ namespace Basic.Lesson_4._1
         //B4-P1/25. If_TimeOfDayGreeting
         public static void B4_P1_25_If_TimeOfDayGreeting()
         {
-         
+            var time = DateTime.Now.TimeOfDay.Hours;
+            Console.WriteLine(time);
+            DateTime dateMorning = new DateTime(2018, 12, 16, 6, 0, 0);
+            DateTime dateMidDay = new DateTime(2018, 12, 16, 12, 0, 0);
+            DateTime dateEvening = new DateTime(2018, 12, 16, 17, 0, 0);
+            var morning = dateMorning.Hour;
+            var midDay = dateMidDay.Hour;
+            var evening = dateEvening.Hour;
 
+            if (time > evening) Console.WriteLine("Good Evening Olga");
+            if (time < midDay) Console.WriteLine("Good Morning Olga");
+            if (time < evening) Console.WriteLine("Good midday Olga");
         }
 
         //B4-P2/25. If_NumbersComparing
@@ -205,7 +215,44 @@ namespace Basic.Lesson_4._1
         //B4-P23/25 IfElse_Calcultor
         public static void B4_P23_25_IfElse_Calcultor()
         {
-            
+            Console.WriteLine("Enter Number 1:");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("operand (+, -, * or /)");
+            var operand = Console.ReadLine();
+
+            Console.WriteLine("Enter Number 2:");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+
+            if (operand == "+")
+            {
+                Console.WriteLine(number1 + number2);
+            }
+            else
+            {
+                if (operand == "-")
+                {
+                    Console.WriteLine(number1 - number2);
+                }
+                else
+                {
+                    if (operand == "*")
+                    {
+                        Console.WriteLine(number1 * number2);
+                    }
+                    else
+                    {
+                        if (number2 != 0)
+                        {
+                            Console.WriteLine(number1 / number2);
+                        }else
+                        {
+                            Console.WriteLine("Divizion by zero");
+                        }
+                    }
+                }
+            }
+
         }
 
 
