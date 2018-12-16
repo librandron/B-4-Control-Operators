@@ -212,7 +212,42 @@ namespace Basic.Lesson_4._1
         //B4-P24_25 Switch_Calculator
         public static void B4_P24_25_Switch_Calculator()
         {
-            
+            Console.WriteLine("Enter Number 1:");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("operand (+, -, * or /)");
+            var operand = Console.ReadLine();
+
+            Console.WriteLine("Enter Number 2:");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+
+
+
+            switch (operand)
+            {
+                case "+":
+                    Console.WriteLine(number1 + number2);
+                    break;
+                case "-":
+                    Console.WriteLine(number1 - number2);
+                    break;
+                case "*":
+                    Console.WriteLine(number1 * number2);
+                    break;
+                case "/":
+                    {
+                        if (number2 == 0)
+                        {
+                            Console.WriteLine("division by zero");
+                            break;
+                        } else
+                        {
+                            Console.WriteLine(number1 / number2);
+                        }
+                        break;
+                    }
+            }
+                    
         }
 
 

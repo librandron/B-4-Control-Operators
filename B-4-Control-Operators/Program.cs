@@ -15,8 +15,8 @@ namespace Basic.Lesson_4._1
 
             //Practice.B4_P5_25_Switch_DayOfWeek();
             //Practice.B4_P6_25_Switch_GameNavigation();
-            Practice.B4_P25_25_Cycle_WordRevercse();
-
+            //Practice.B4_P25_25_Cycle_WordRevercse();
+            Practice.B4_P24_25_Switch_Calculator();
 
             Console.ReadLine();
         }
