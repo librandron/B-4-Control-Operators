@@ -11,11 +11,11 @@ namespace Basic.Lesson_4._1
     {
         static void Main(string[] args)
         {
-            Lesson.B3_P2_9_CheckResultAddition();
+            //Lesson.B3_P2_9_CheckResultAddition();
 
             //Practice.B4_P5_25_Switch_DayOfWeek();
             //Practice.B4_P6_25_Switch_GameNavigation();
-
+            Practice.B4_P25_25_Cycle_WordRevercse();
 
 
             Console.ReadLine();

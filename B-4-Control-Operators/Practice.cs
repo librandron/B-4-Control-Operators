@@ -219,6 +219,25 @@ namespace Basic.Lesson_4._1
         //B4-P25/25 Cycle_WordRevercse
         public static void B4_P25_25_Cycle_WordRevercse()
         {
+            Console.WriteLine("Enter some word:");
+            string word = Console.ReadLine();
+            int size = word.Length;
+
+            //foreach (char letter in word)
+            //{
+
+            //    Console.WriteLine(word[size - 1]);
+            //    size = -size;
+            //}
+
+            while (size != 0)
+            {
+                Console.WriteLine(word[size - 1]);
+                size--;
+            }
+                
+            
+
         }
 
         
