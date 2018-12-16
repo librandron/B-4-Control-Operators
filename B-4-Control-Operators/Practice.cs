@@ -12,6 +12,8 @@ namespace Basic.Lesson_4._1
         //B4-P1/25. If_TimeOfDayGreeting
         public static void B4_P1_25_If_TimeOfDayGreeting()
         {
+         
+
         }
 
         //B4-P2/25. If_NumbersComparing
@@ -33,12 +35,64 @@ namespace Basic.Lesson_4._1
         //B4-P5/25. Switch_DayOfWeek
         public static void B4_P5_25_Switch_DayOfWeek()
         {
+            var today = DateTime.Today;
+            var dayOfWeek = (int)today.DayOfWeek;
+            switch (dayOfWeek)
+            {
+                case 0:
+                    Console.WriteLine("Good Sunday Olga");
+                    break;
+                case 1:
+                    Console.WriteLine("Good Monday Olga");
+                    break;
+                case 2:
+                    Console.WriteLine("Good Tuesday Olga");
+                    break;
+                case 3:
+                    Console.WriteLine("Good Wednesday Olga");
+                    break;
+                case 4:
+                    Console.WriteLine("Good Thursday Olga");
+                    break;
+                case 5:
+                    Console.WriteLine("Good Friday Olga");
+                    break;
+                case 6:
+                    Console.WriteLine("Good Saturday Olga");
+                    break;
+            }
+
         }
 
         //B4-P6/25. Switch_GameNavigation
         public static void B4_P6_25_Switch_GameNavigation()
         {
-            
+
+            Labeltart:
+
+            var button = Console.ReadKey();
+
+            switch (button.KeyChar)
+            {
+                case 'w':
+                case 'W':
+                    Console.WriteLine("\nUP");
+                    break;
+                case 'a':
+                case 'A':
+                    Console.WriteLine("\nLEFT");
+                    break;
+                case 's':
+                case 'S':
+                    Console.WriteLine("\nDOWN");
+                    break;
+                case 'd':
+                case 'D':
+                    Console.WriteLine("\nRIGHT");
+                    break;
+            }
+            goto Labeltart;
+
         }
 
         //B4-P7/25. For_10OddEven
@@ -166,5 +220,10 @@ namespace Basic.Lesson_4._1
         public static void B4_P25_25_Cycle_WordRevercse()
         {
         }
+
+        
+
+
+
     }
 }

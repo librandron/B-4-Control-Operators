@@ -11,7 +11,14 @@ namespace Basic.Lesson_4._1
     {
         static void Main(string[] args)
         {
-             Console.ReadLine();
+            Lesson.B3_P2_9_CheckResultAddition();
+
+            //Practice.B4_P5_25_Switch_DayOfWeek();
+            //Practice.B4_P6_25_Switch_GameNavigation();
+
+
+
+            Console.ReadLine();
         }
      }
 }
