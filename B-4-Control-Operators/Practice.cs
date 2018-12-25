@@ -218,13 +218,14 @@ namespace Basic.Lesson_4._1
         //B4-P9/25. For_Matrix10x10
         public static void B4_P9_25_For_Matrix10x10()
         {
-           
+ 
         }
 
 
         //B4-P10/25. For_HelloWorld
         public static void B4_P10_25_For_HelloWorld()
         {
+
         }
 
 
