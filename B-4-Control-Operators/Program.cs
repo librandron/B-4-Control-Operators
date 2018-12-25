@@ -11,7 +11,12 @@ namespace Basic.Lesson_4._1
     {
         static void Main(string[] args)
         {
-            Practice.B4_P1_25_If_TimeOfDayGreeting();
+            //Practice.B4_P1_25_If_TimeOfDayGreeting();
+            Practice.B4_P2_25_If_NumbersComparing();
+
+
+
+
 
             //Practice.B4_P5_25_Switch_DayOfWeek();
             //Practice.B4_P6_25_Switch_GameNavigation();

@@ -52,6 +52,30 @@ namespace Basic.Lesson_4._1
         //B4-P2/25. If_NumbersComparing
         public static void B4_P2_25_If_NumbersComparing()
         {
+            int firstNumber, secondNumber;
+
+            Console.WriteLine("Enter first number:");
+            firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter second number:");
+            secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            if (firstNumber == secondNumber)
+            {
+                Console.WriteLine($"{firstNumber} = {secondNumber}");
+            }
+            else
+            {
+                if (firstNumber > secondNumber)
+                {
+                    Console.WriteLine($"{firstNumber} > {secondNumber} на {firstNumber - secondNumber}");
+                }
+                else
+                {
+                    Console.WriteLine($"{firstNumber} < {secondNumber} на {secondNumber - firstNumber}");
+                }
+            }
+
         }
 
         //B4-P3/25. If_PositiveNumbersComparing
