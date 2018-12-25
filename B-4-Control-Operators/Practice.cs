@@ -23,7 +23,7 @@ namespace Basic.Lesson_4._1
 
             if (time > evening) Console.WriteLine("Good Evening Olga");
             if (time < midDay) Console.WriteLine("Good Morning Olga");
-            if (time < evening) Console.WriteLine("Good midday Olga");
+            if (time < evening) Console.WriteLine("Good Midday Olga");
         }
 
         //B4-P2/25. If_NumbersComparing
