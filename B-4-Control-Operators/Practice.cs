@@ -203,6 +203,15 @@ namespace Basic.Lesson_4._1
         //B4-P8/25. For_3DevideNumbers
         public static void B4_P8_25_For_3DevideNumbers()
         {
+            for (var i = 30; i >= 0;  i--)
+            {
+                var ostatok = i % 3;
+
+                if (ostatok == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
 
 
