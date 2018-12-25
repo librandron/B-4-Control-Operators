@@ -12,18 +12,41 @@ namespace Basic.Lesson_4._1
         //B4-P1/25. If_TimeOfDayGreeting
         public static void B4_P1_25_If_TimeOfDayGreeting()
         {
-            var time = DateTime.Now.TimeOfDay.Hours;
-            Console.WriteLine(time);
-            DateTime dateMorning = new DateTime(2018, 12, 16, 6, 0, 0);
-            DateTime dateMidDay = new DateTime(2018, 12, 16, 12, 0, 0);
-            DateTime dateEvening = new DateTime(2018, 12, 16, 17, 0, 0);
-            var morning = dateMorning.Hour;
-            var midDay = dateMidDay.Hour;
-            var evening = dateEvening.Hour;
+            var morningStart = TimeSpan.Parse("06:00");
+            var morningStop = TimeSpan.Parse("11:59");
 
-            if (time > evening) Console.WriteLine("Good Evening Olga");
-            if (time < midDay) Console.WriteLine("Good Morning Olga");
-            if (time < evening) Console.WriteLine("Good Midday Olga");
+            var dayStart = TimeSpan.Parse("12:00");
+            var dayStop = TimeSpan.Parse("18:00");
+
+            var eveningStart = TimeSpan.Parse("18:01");
+            var eveningStop = TimeSpan.Parse("23:59");
+
+            var time = DateTime.Now.TimeOfDay;
+            
+
+            if (time > eveningStart && time < eveningStop)
+            {
+                Console.WriteLine("Good evening Olga");
+            }
+            else
+            {
+                if (time > dayStart && time < dayStop)
+                {
+                    Console.WriteLine("Good day Olga");
+                }
+                else
+                {
+                    if (time > morningStart && time < morningStop)
+                    {
+                        Console.WriteLine("Good Morning olga");
+                    }
+                }
+            }         
+
+
+            Console.WriteLine(time);
+
+            Console.ReadKey();
         }
 
         //B4-P2/25. If_NumbersComparing
@@ -264,7 +287,7 @@ namespace Basic.Lesson_4._1
 
             Console.WriteLine("operand (+, -, * or /)");
             var operand = Console.ReadLine();
-
+ 
             Console.WriteLine("Enter Number 2:");
             int number2 = Convert.ToInt32(Console.ReadLine());
 
@@ -309,7 +332,7 @@ namespace Basic.Lesson_4._1
             //{
 
             //    Console.WriteLine(word[size - 1]);
-            //    size = -size;
+            //    size = size - 1;
             //}
 
             while (size != 0)
