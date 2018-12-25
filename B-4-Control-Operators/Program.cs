@@ -13,8 +13,8 @@ namespace Basic.Lesson_4._1
         {
             //Practice.B4_P1_25_If_TimeOfDayGreeting();
             //Practice.B4_P2_25_If_NumbersComparing();
-            Practice.B4_P3_25_If_PositiveNumbersComparing();
-
+            //Practice.B4_P3_25_If_PositiveNumbersComparing();
+            Practice.B4_P7_25_For_10OddEven();
 
 
 

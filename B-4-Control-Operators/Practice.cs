@@ -116,7 +116,7 @@ namespace Basic.Lesson_4._1
         //B4-P4/25. If_Akinator5Numbers
         public static void B4_P4_25_If_Akinator5Numbers()
         {
-            
+
         }
 
         //B4-P5/25. Switch_DayOfWeek
@@ -185,7 +185,18 @@ namespace Basic.Lesson_4._1
         //B4-P7/25. For_10OddEven
         public static void B4_P7_25_For_10OddEven()
         {
-            
+            for (var i = 1; i <=10; i++)
+            {
+                var ostatok = i % 2;
+                if (ostatok == 0)
+                {
+                    Console.WriteLine($"{i} четное");
+                }
+                else
+                {
+                    Console.WriteLine($"{i} нечетное");
+                }
+            }
         }
 
 
